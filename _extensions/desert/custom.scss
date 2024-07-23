@@ -158,7 +158,7 @@ $desert-title-author-name-font-size: 1em;
 /* Code Blocks */
 .reveal {
   .sourceCode {
-    font-size: 0.85em;
+    font-size: 0.89em;
 
     pre code {
       background-color: reasonable-color("cinnamon-1");
@@ -205,7 +205,8 @@ div.callout-title p {
 }
 
 div.callout-cinnamon {
-  border-left-color: reasonable-color("cinnamon-3") !important;  
+  border-left-color: reasonable-color("cinnamon-3") !important;
+  font-size: 1.26em;
 }
 
 div.callout-cinnamon .callout-icon::before {  
@@ -220,6 +221,7 @@ div.callout-cinnamon.callout-style-default .callout-title {
 
 div.callout-cerulean {
   border-left-color: reasonable-color("cerulean-3") !important;  
+  font-size: 1.26em;
 }
 
 div.callout-cerulean .callout-icon::before {  
