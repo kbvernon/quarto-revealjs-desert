@@ -1,0 +1,299 @@
+---
+title: Desert Theme
+subtitle: With references to Critical Role
+author: 
+  - name: Nott the Brave
+    affiliation: The Mighty Nein
+    orcid: 0000-0002-1825-0097
+  - name: Fresh Cut Grass
+    affiliation: Bells' Hells
+    orcid: 0000-0002-1825-0097
+date: last-modified
+github: kbvernon/quarto-revealjs-desert
+format:
+  desert-revealjs: default
+execute:
+  echo: false
+---
+
+```{r}
+# so quarto knows this is not python
+```
+
+## Example Slide
+
+The desert theme provides a consistent styling scheme for Quarto's Reveal.js presentations, so...
+
+-  you get all the benefits of code execution with [Quarto](https://quarto.org/)
+-  and nearly all the functionality offered by [Reveal.js](https://revealjs.com/)
+-  not to mention Quarto's [extension](https://quarto.org/docs/extensions/) mechanism.
+
+## Reasonable Colors
+
+```{css}
+.color-set {
+  display: flex; 
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.color {
+  flex: 1 64px;
+  min-height: 32px;
+  line-height: 32px;
+}
+```
+
+This theme uses the accessible, high contrast, and complementary color palettes, cinnamon and cerulean, as defined by [Reasonable Colors](https://www.reasonable.work/colors/). 
+
+#### Cinnamon {.text-cinnamon-5}
+::::::{.color-set}
+:::{.color .bg-cinnamon-1}
+#fff8f3
+:::
+:::{.color .bg-cinnamon-2}
+#ffdfc6
+:::
+:::{.color .bg-cinnamon-3}
+#d57300
+:::
+:::{.color .bg-cinnamon-4 .text-gray-1}
+#ac5c00
+:::
+:::{.color .bg-cinnamon-5 .text-gray-1}
+#633300
+:::
+:::{.color .bg-cinnamon-6 .text-gray-1}
+#371d00
+:::
+::::::
+
+#### Cerulean {.text-cerulean-5}
+::::::{.color-set}
+:::{.color .bg-cerulean-1}
+#e8f6ff
+:::
+:::{.color .bg-cerulean-2}
+#b9e3ff
+:::
+:::{.color .bg-cerulean-3}
+#0092c5
+:::
+:::{.color .bg-cerulean-4 .text-gray-1}
+#00749d
+:::
+:::{.color .bg-cerulean-5 .text-gray-1}
+#003c54
+:::
+:::{.color .bg-cerulean-6 .text-gray-1}
+#001d2a
+:::
+::::::
+
+#### Gray {.text-gray-5}
+::::::{.color-set style="margin-bottom: 1em;"}
+:::{.color .bg-gray-1}
+#f6f6f6
+:::
+:::{.color .bg-gray-2}
+#e2e2e2
+:::
+:::{.color .bg-gray-3}
+#8b8b8b
+:::
+:::{.color .bg-gray-4 .text-gray-1}
+#6f6f6f
+:::
+:::{.color .bg-gray-5 .text-gray-1}
+#3e3e3e
+:::
+:::{.color .bg-gray-6 .text-gray-1}
+#222222
+:::
+::::::
+
+These are numbered from light to dark as color-1, color-2, ..., color-6.
+
+## Github Link
+
+To add a link to the associated Github repository on the title slide, simply specify `github: <user>/<repo>` in the yaml: 
+
+````md
+---
+github: kbvernon/quarto-revealjs-desert
+---
+````
+
+See the title slide for this demo for an example. 
+
+# Markdown Components {.slide-dark-cinnamon}
+
+## Code Blocks
+
+The desert theme adds a very light orangish-brown background to code chunks.
+
+```{r}
+#| echo: true
+#| eval: false
+
+plus_one <- function(x){ x + 1 }
+```
+
+## Lists
+
+Unordered list.
+
+- first item
+    - sub-item
+- second item
+
+Ordered list.
+
+1. first item
+    i. sub-item
+2. second item
+
+## Callout Blocks
+
+The desert theme provides modified versions of the default "note" [callout](https://quarto.org/docs/authoring/callouts.html): 
+
+:::::: {.panel-tabset}
+
+## `.callout-cinnamon`
+
+````md
+:::{.callout-cinnamon}
+## Regression Specification
+
+The main specification is as follows:
+
+$$
+y = X \beta + \epsilon
+$$
+:::
+````
+
+:::{.callout-cinnamon}
+## Regression Specification
+
+The main specification is as follows:
+
+$$
+y = X \beta + \epsilon
+$$
+:::
+
+## `.callout-cerulean`
+
+````md
+:::{.callout-cerulean}
+## Regression Specification
+
+The main specification is as follows:
+
+$$
+y = X \beta + \epsilon
+$$
+:::
+````
+
+:::{.callout-cerulean}
+## Regression Specification
+
+The main specification is as follows:
+
+$$
+y = X \beta + \epsilon
+$$
+:::
+
+::::::
+
+# Additional Tools {.slide-dark-cinnamon}
+
+## CSS Utility Classes
+
+The Reasonable Colors color palettes are made available as utility classes for text and background colors. 
+
+`[Hello world!]{.text-cinnamon-1 .bg-cinnamon-6}`  
+
+[Hello world!]{.text-cinnamon-1 .bg-cinnamon-6}
+
+`[Hello world!]{.text-cerulean-1 .bg-cerulean-6}`  
+
+[Hello world!]{.text-cerulean-1 .bg-cerulean-6}
+
+## Icons {{< iconify exploding-head >}}
+
+The desert theme re-exports Mickaël Canouil's shortcode extension [`{iconify}`](https://github.com/mcanouil/quarto-iconify):
+
+```md
+{{{< iconify exploding-head >}}}
+{{{< iconify fluent-emoji exploding-head >}}}
+{{{< iconify fluent-emoji:exploding-head >}}}
+{{{< iconify exploding-head size=2xl >}}}
+{{{< iconify exploding-head size=5x rotate=180deg >}}}
+{{{< iconify exploding-head size=Huge >}}}
+{{{< iconify fluent-emoji-high-contrast 1st-place-medal >}}}
+{{{< iconify twemoji 1st-place-medal >}}}
+{{{< iconify line-md loading-alt-loop >}}}
+{{{< iconify fa6-brands apple width=50px height=10px rotate=90deg flip=vertical >}}}
+{{{< iconify simple-icons:quarto >}}}
+```
+# Slide Themes {.slide-dark-cerulean}
+
+## Dark Cinnamon {.slide-dark-cinnamon}
+
+The desert theme gives you access to simple slide themes. You can specify them 
+with 
+
+````md
+## Dark Cinnamon {.slide-dark-cinnamon}
+````
+
+Then you get lists like this:
+
+1. first item
+    i. sub-item
+2. second item
+
+And callout blocks like this:
+
+:::{.callout-cerulean}
+## Regression Specification
+
+The main specification is as follows:
+
+$$
+y = X \beta + \epsilon
+$$
+:::
+
+## Dark Cerulean {.slide-dark-cerulean}
+
+The desert theme gives you access to simple slide themes. You can specify them 
+with 
+
+````md
+## Dark Cerulean {.slide-dark-cerulean}
+````
+
+Then you get lists like this:
+
+1. first item
+    i. sub-item
+2. second item
+
+And callout blocks like this:
+
+:::{.callout-cinnamon}
+## Regression Specification
+
+The main specification is as follows:
+
+$$
+y = X \beta + \epsilon
+$$
+:::

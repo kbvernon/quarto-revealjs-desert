@@ -1,0 +1,20 @@
+---
+title: Desert Theme
+subtitle: With references to Critical Role
+author: 
+  - name: Nott the Brave
+    affiliation: The Mighty Nein
+    orcid: 0000-0002-1825-0097
+  - name: Fresh Cut Grass
+    affiliation: Bells' Hells
+    orcid: 0000-0002-1825-0097
+date: last-modified
+github: kbvernon/quarto-revealjs-desert
+format:
+  desert-revealjs: default
+execute:
+  echo: false
+---
+
+## First Slide {.slide-dark-cinnamon}
+
