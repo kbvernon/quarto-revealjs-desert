@@ -27,7 +27,7 @@ github: kbvernon/quarto-revealjs-desert
 
 ## Example
 
-For examples of styling and functionality, see the demo at <kbvernon.github.io/quarto-revealjs-desert>.  
+For examples of styling and functionality, see the demo at <https://kbvernon.github.io/quarto-revealjs-desert/demo.html>.  
 
 Source code for this demo can be found here: [demo.qmd](demo.qmd).
 
