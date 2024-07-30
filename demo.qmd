@@ -246,7 +246,7 @@ The desert theme re-exports Mickaël Canouil's shortcode extension [`{iconify}`]
 {{{< iconify simple-icons:quarto >}}}
 ```
 
-## Textboxs
+## Textboxes
 
 ````md
 :::{.textbox style="margin-top: 1em; margin-right: auto; width: 40%;"}
