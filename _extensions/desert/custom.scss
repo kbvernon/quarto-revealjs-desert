@@ -82,12 +82,13 @@ $desert-title-author-name-font-size: 1em;
   
   .desert-title-grid {
     display: grid;
-    grid-template-rows: 20% 80%;
-    row-gap: 1.3em;
+    grid-template-rows: 20% 65% 15%;
     height: 100%;
+    width: 100%;
 
-    .desert-title-block-top {
+    .desert-title {
       align-self: start;
+      z-index: 1;
       
       p.subtitle {
         font-size: 1.2em;
@@ -96,12 +97,12 @@ $desert-title-author-name-font-size: 1em;
         font-weight: 300;
         margin-top: 0em;
         margin-bottom: 0em;  
-      }
+      }      
     }
-  
-    .desert-title-block-bottom {
-      display: grid;           
-  
+
+    .desert-authors {
+      z-index: 1;
+
       .institute,
       .quarto-title-affiliation,
       .quarto-title-author-email {
@@ -120,6 +121,7 @@ $desert-title-author-name-font-size: 1em;
         align-self: start;
         display: grid;
         justify-content: left;
+        margin-top: 1em;
         
         .quarto-title-author {
           padding-left: 0em;
@@ -131,14 +133,22 @@ $desert-title-author-name-font-size: 1em;
           margin-bottom: 0;
         }
       }
+    }    
+  
+    .desert-details {
+      align-self: end;             
+      z-index: 1;        
       
-      .deets {
-        align-self: end;
+      .details {        
         font-size: 1em;
         font-weight: 300;
+
+        p {
+          margin-bottom: 0;
+        }
       }  
-    }
-  }
+    }    
+  }  
 }
 
 .fa6-brands--github {
@@ -158,7 +168,7 @@ $desert-title-author-name-font-size: 1em;
 /* Code Blocks */
 .reveal {
   .sourceCode {
-    font-size: 0.89em;
+    font-size: 0.9em;
 
     pre code {
       background-color: reasonable-color("cinnamon-1");

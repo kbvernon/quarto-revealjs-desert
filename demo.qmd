@@ -10,6 +10,9 @@ author:
     orcid: 0000-0002-1825-0097
 date: last-modified
 github: kbvernon/quarto-revealjs-desert
+title-slide-attributes:
+    data-background-image: pueblo.png
+    data-background-size: contain
 format:
   desert-revealjs: default
 execute:
