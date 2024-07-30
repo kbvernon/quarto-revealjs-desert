@@ -11,7 +11,7 @@ author:
 date: last-modified
 github: kbvernon/quarto-revealjs-desert
 title-slide-attributes:
-    data-background-image: pueblo.png
+    data-background-image: images/pueblo.png
     data-background-size: contain
 format:
   desert-revealjs: default
@@ -245,6 +245,19 @@ The desert theme re-exports Mickaël Canouil's shortcode extension [`{iconify}`]
 {{{< iconify fa6-brands apple width=50px height=10px rotate=90deg flip=vertical >}}}
 {{{< iconify simple-icons:quarto >}}}
 ```
+
+## Textboxs
+
+````md
+:::{.textbox style="margin-top: 1em; margin-right: auto; width: 40%;"}
+This is a `.textbox`.
+:::
+````
+
+:::{.textbox style="margin-top: 1em; margin-right: auto; width: 40%;"}
+This is a `.textbox`.
+:::
+
 # Slide Themes {.slide-dark-cerulean}
 
 ## Dark Cinnamon {.slide-dark-cinnamon}
